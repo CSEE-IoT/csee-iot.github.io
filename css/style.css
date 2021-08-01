@@ -909,7 +909,7 @@ header .right_bt .btn {
 }
 
 .header_bottom {
-	min-height: auto;
+	max-height: 110px;
 }
 
 .header_top ul {
@@ -949,13 +949,13 @@ header .right_bt .btn {
 
 .logo {
 	float: left;
-	margin: 19px 0 19px;
+	margin: 15px 0 10px;
 	position: relative;
 	left: 0;
 }
 
 .logo img {
-	height: 80px;
+	height: 50px;
 }
 
 .header_style_1 .header_top {
