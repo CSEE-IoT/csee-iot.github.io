@@ -962,6 +962,11 @@ header .right_bt .btn {
 	position: relative;
 }
 
+.header_style_1 {
+	position: fixed;
+	background: #ffffff;
+}
+
 .make_appo {
 	float: right;
 }
@@ -1001,6 +1006,7 @@ header .right_bt .btn {
 .header_bottom {
 	position: relative;
 	z-index: 9;
+
 }
 
 
