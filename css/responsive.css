@@ -1546,7 +1546,7 @@
         margin-right: 10px;
      }
 	 #navbar_menu.small-screen #menu-button {
-        top: -80px;
+        top: -64px;
     }
 	.search_icon {
     top: -74px;
@@ -1701,7 +1701,7 @@
 }
 
 #navbar_menu.small-screen #menu-button {
-    top: -71px;
+    top: -55px;
 }
 
 #search_bar .search-global {
