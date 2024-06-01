@@ -7,30 +7,37 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: auto;
             line-height: 1.6;
         }
         h1, h2 {
             color: #333;
         }
         h1 {
-            font-size: 24px;
+            font-size: 20px;
         }
         h2 {
-            font-size: 20px;
+            font-size: 16px;
         }
         ul {
             list-style-type: none;
-            padding-left: 20px;
+            padding-left: 16px;
         }
         ul ul {
-            margin-left: 20px;
+            margin-left: 16px;
+            margin-right: 16px;
         }
         input[type="checkbox"] {
             margin-right: 10px;
         }
         label {
             margin-left: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -117,5 +124,107 @@
         </ul>
         <li><input type="checkbox" id="3.9"><label for="3.9"> 3.9. DESARME ESTACIÓN TERRENA</label></li>
     </ul>
+
+    <button onclick="downloadPDF()">Descargar en PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script>
+        function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF('p', 'mm', 'a4'); // Ajustar tamaño del documento a A4
+            let y = 10;
+
+            function addSection(title) {
+                doc.setFontSize(16);
+                doc.text(title, 10, y);
+                y += 10;
+            }
+
+            function addCheckboxItem(item) {
+                const checkbox = document.getElementById(item);
+                const label = document.querySelector(`label[for="${item}"]`).innerText;
+                const checked = checkbox.checked ? "[X] " : "[ ] ";
+                const maxWidth = 170; // Ancho máximo para el texto en el PDF
+                let textLines = doc.splitTextToSize(checked + label, maxWidth);
+                doc.setFontSize(12);
+                for (let i = 0; i < textLines.length; i++) {
+                    if (y > 280) { // Si llega al borde inferior de la página
+                        doc.addPage(); // Agregar nueva página
+                        y = 10; // Reiniciar posición en el nuevo página
+                    }
+                    doc.text(textLines[i], 15, y); // Ajustar posición del texto
+                    y += 8;
+                }
+            }
+
+
+
+            addSection('1. PLANIFICACIÓN EN OFICINA');
+            addCheckboxItem('1.1');
+            addCheckboxItem('1.2');
+            addCheckboxItem('1.3');
+            addCheckboxItem('1.4');
+            addCheckboxItem('1.5');
+            addCheckboxItem('1.5.1');
+            addCheckboxItem('1.5.2');
+            addCheckboxItem('1.5.3');
+            addCheckboxItem('1.5.4');
+            addCheckboxItem('1.5.5');
+            addCheckboxItem('1.5.6');
+            addCheckboxItem('1.5.7');
+            addCheckboxItem('1.5.8');
+            addCheckboxItem('1.5.9');
+            addCheckboxItem('1.6');
+
+            addSection('2. PRE-VUELO EN TERRENO');
+            addCheckboxItem('2.1');
+            addCheckboxItem('2.1.1');
+            addCheckboxItem('2.1.1.1');
+            addCheckboxItem('2.1.1.2');
+            addCheckboxItem('2.1.1.3');
+            addCheckboxItem('2.1.1.4');
+            addCheckboxItem('2.1.1.5');
+            addCheckboxItem('2.1.2');
+            addCheckboxItem('2.1.3');
+            addCheckboxItem('2.1.3.1');
+            addCheckboxItem('2.1.3.2');
+            addCheckboxItem('2.1.3.3');
+            addCheckboxItem('2.1.3.4');
+            addCheckboxItem('2.1.3.4.1');
+            addCheckboxItem('2.1.3.4.2');
+            addCheckboxItem('2.1.3.4.3');
+            addCheckboxItem('2.1.3.4.4');
+            addCheckboxItem('2.1.3.5');
+            addCheckboxItem('2.1.3.6');
+            addCheckboxItem('2.1.3.7');
+            addCheckboxItem('2.1.3.8');
+
+            addSection('3. POST-VUELO EN TERRENO');
+            addCheckboxItem('3.1');
+            addCheckboxItem('3.2');
+            addCheckboxItem('3.3');
+            addCheckboxItem('3.4');
+            addCheckboxItem('3.5');
+            addCheckboxItem('3.5.1');
+            addCheckboxItem('3.5.2');
+            addCheckboxItem('3.5.3');
+            addCheckboxItem('3.5.4');
+            addCheckboxItem('3.6');
+            addCheckboxItem('3.7');
+            addCheckboxItem('3.8');
+            addCheckboxItem('3.8.1');
+            addCheckboxItem('3.8.2');
+            addCheckboxItem('3.8.3');
+            addCheckboxItem('3.8.4');
+            addCheckboxItem('3.8.5');
+            addCheckboxItem('3.9');
+
+            // Obtener la fecha y hora actual
+            const now = new Date();
+            const dateTimeString = now.toLocaleString().replace(/[\/\s,:]/g, '-'); // Eliminar caracteres no permitidos en nombres de archivos
+
+            doc.save('lista-de-chequeo-rpas-' + dateTimeString + '.pdf');
+        }
+    </script>
 </body>
 </html>
