@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Chequeo RPAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        ul ul {
+            margin-left: 20px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        label {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>LISTA DE CHEQUEO RPAS – PROCEDIMIENTO OFICINA-PREVUELO-POSTVUELO</h1>
+    <p>IMPORTANTE: EVITE MEMORIZAR ESTOS PROCEDIMIENTOS – NO GENERE CONFIANZA!</p>
+    
+    <h2>1. PLANIFICACIÓN EN OFICINA</h2>
+    <ul>
+        <li><input type="checkbox" id="1.1"><label for="1.1"> 1.1. PLANEACIÓN DE MISIÓN (FIRMWARE, MISION PLANER, TIEMPOS DE VUELOS, CICLOS, SENSORES)</label></li>
+        <li><input type="checkbox" id="1.2"><label for="1.2"> 1.2. DETERMINACIÓN DE INFORMACIÓN O DATOS A EXTRAER, NÚMERO DE PUNTOS DE CONTROL EN TIERRA</label></li>
+        <li><input type="checkbox" id="1.3"><label for="1.3"> 1.3. SOLICITUDES DE PERMISOS DE VUELO (DUEÑO DEL PREDIO, AEROCIVIL-5 DÍAS, FUERZA AÉREA, OTROS)</label></li>
+        <li><input type="checkbox" id="1.4"><label for="1.4"> 1.4. PLANIMETRÍA DE OPERACIÓN (ROLES DE RECURSO HUMANOS, POSICIONES DE OPERACIÓN, OBSERVADORES, TIEMPOS, LOGÍSTICA)</label></li>
+        <li><input type="checkbox" id="1.5"><label for="1.5"> 1.5. CHECKLIST:</label></li>
+        <ul>
+            <li><input type="checkbox" id="1.5.1"><label for="1.5.1"> 1.5.1. BATERÍAS DRON</label></li>
+            <li><input type="checkbox" id="1.5.2"><label for="1.5.2"> 1.5.2. BATERÍAS CONTROL</label></li>
+            <li><input type="checkbox" id="1.5.3"><label for="1.5.3"> 1.5.3. HÉLICES</label></li>
+            <li><input type="checkbox" id="1.5.4"><label for="1.5.4"> 1.5.4. DRONE</label></li>
+            <li><input type="checkbox" id="1.5.5"><label for="1.5.5"> 1.5.5. PANTALLAS (MONITORES)</label></li>
+            <li><input type="checkbox" id="1.5.6"><label for="1.5.6"> 1.5.6. ESTACIÓN TERRENA (COMPUTADORA – ANTENAS, MÁSTILES, MESAS, CARPAS, LENTES DE SOL, CASCOS)</label></li>
+            <li><input type="checkbox" id="1.5.7"><label for="1.5.7"> 1.5.7. INDICADORES VISUALES DEL EQUIPO</label></li>
+            <li><input type="checkbox" id="1.5.8"><label for="1.5.8"> 1.5.8. HERRAMIENTAS</label></li>
+            <li><input type="checkbox" id="1.5.9"><label for="1.5.9"> 1.5.9. REPUESTOS (HÉLICES, BATERÍAS)</label></li>
+        </ul>
+        <li><input type="checkbox" id="1.6"><label for="1.6"> 1.6. PERMISOS APROBADOS</label></li>
+    </ul>
+    
+    <h2>2. PRE-VUELO EN TERRENO</h2>
+    <ul>
+        <li><input type="checkbox" id="2.1"><label for="2.1"> 2.1. PROCESO – CHECKLIST PREVUELO</label></li>
+        <ul>
+            <li><input type="checkbox" id="2.1.1"><label for="2.1.1"> 2.1.1. VERIFICAR PUNTOS DE OPERACIÓN</label></li>
+            <ul>
+                <li><input type="checkbox" id="2.1.1.1"><label for="2.1.1.1"> 2.1.1.1. CONDICIONES METEOROLÓGICAS (BARÓMETROS, LLUVIA, VISIBILIDAD)</label></li>
+                <li><input type="checkbox" id="2.1.1.2"><label for="2.1.1.2"> 2.1.1.2. PLANIMETRÍA DE OPERACIÓN (ROLES DE RECURSO HUMANOS, POSICIONES DE OPERACIÓN, OBSERVADORES, TIEMPOS, LOGÍSTICA)</label></li>
+                <li><input type="checkbox" id="2.1.1.3"><label for="2.1.1.3"> 2.1.1.3. DETERMINACIÓN DE “HOME”</label></li>
+                <li><input type="checkbox" id="2.1.1.4"><label for="2.1.1.4"> 2.1.1.4. DETERMINACIÓN DE ESTACIÓN TERRENA</label></li>
+                <li><input type="checkbox" id="2.1.1.5"><label for="2.1.1.5"> 2.1.1.5. PUNTOS DE OBSERVACIÓN Y CONTROL</label></li>
+            </ul>
+            <li><input type="checkbox" id="2.1.2"><label for="2.1.2"> 2.1.2. ARMAR/POSICIONAR ESTACIÓN TERRENA</label></li>
+            <li><input type="checkbox" id="2.1.3"><label for="2.1.3"> 2.1.3. ARMADO DEL DRONE/RPAS</label></li>
+            <ul>
+                <li><input type="checkbox" id="2.1.3.1"><label for="2.1.3.1"> 2.1.3.1. ASEGURAMIENTO DE ESTRUCTURA</label></li>
+                <li><input type="checkbox" id="2.1.3.2"><label for="2.1.3.2"> 2.1.3.2. INSTALAR ANTENAS (TELEMETRÍA, GPS, ETC)</label></li>
+                <li><input type="checkbox" id="2.1.3.3"><label for="2.1.3.3"> 2.1.3.3. CONECTAR ESTACIÓN TERRENA – DRONE/RPAS</label></li>
+                <li><input type="checkbox" id="2.1.3.4"><label for="2.1.3.4"> 2.1.3.4. VALIDAR ENLACES DE SEÑAL INALÁMBRICA (CON CONEXIÓN DE BATERÍA, EN LO POSIBLE AUXILIAR)</label></li>
+                <ul>
+                    <li><input type="checkbox" id="2.1.3.4.1"><label for="2.1.3.4.1"> 2.1.3.4.1. TELEMETRÍA</label></li>
+                    <li><input type="checkbox" id="2.1.3.4.2"><label for="2.1.3.4.2"> 2.1.3.4.2. GPS</label></li>
+                    <li><input type="checkbox" id="2.1.3.4.3"><label for="2.1.3.4.3"> 2.1.3.4.3. RADIOCONTROL</label></li>
+                    <li><input type="checkbox" id="2.1.3.4.4"><label for="2.1.3.4.4"> 2.1.3.4.4. MANDOS (“ARMANDO” MOTORES)</label></li>
+                </ul>
+                <li><input type="checkbox" id="2.1.3.5"><label for="2.1.3.5"> 2.1.3.5. CALIBRACIÓN (DRONE/RPAS, SENSORES, COMPÁS, ACELERÓMETROS, AIR SPEED, ETC.)</label></li>
+                <li><input type="checkbox" id="2.1.3.6"><label for="2.1.3.6"> 2.1.3.6. INSTALACIÓN DE HÉLICES</label></li>
+                <li><input type="checkbox" id="2.1.3.7"><label for="2.1.3.7"> 2.1.3.7. INSTALACIÓN DE BATERÍA DE VUELO</label></li>
+                <li><input type="checkbox" id="2.1.3.8"><label for="2.1.3.8"> 2.1.3.8. PESO Y BALANCE</label></li>
+            </ul>
+        </ul>
+    </ul>
+    
+    <h2>3. POST-VUELO EN TERRENO</h2>
+    <ul>
+        <li><input type="checkbox" id="3.1"><label for="3.1"> 3.1. APAGAR MOTORES Y AERONAVE</label></li>
+        <li><input type="checkbox" id="3.2"><label for="3.2"> 3.2. APAGAR RADIO CONTROL</label></li>
+        <li><input type="checkbox" id="3.3"><label for="3.3"> 3.3. BITÁCORA DE VUELO (CIERRE DE VUELO)</label></li>
+        <li><input type="checkbox" id="3.4"><label for="3.4"> 3.4. VALIDAR INFORMACIÓN REGISTRADA POR EL DRONE/RPAS (EXTRAER TARJETAS SD, ETC)</label></li>
+        <li><input type="checkbox" id="3.5"><label for="3.5"> 3.5. CHECKLIST 360°</label></li>
+        <ul>
+            <li><input type="checkbox" id="3.5.1"><label for="3.5.1"> 3.5.1. VERIFICAR CONEXIONES</label></li>
+            <li><input type="checkbox" id="3.5.2"><label for="3.5.2"> 3.5.2. VERIFICAR INTEGRIDAD ESTRUCTURAL (GRIETAS, ROTURAS, ELEMENTOS SUELTOS-TORNILLOS)</label></li>
+            <li><input type="checkbox" id="3.5.3"><label for="3.5.3"> 3.5.3. MOVIMIENTO Y MECANISMOS MÓVILES (GIMBAL, RETRACTILES, CÁMARAS, SENSORES, ELEMENTOS FIJOS)</label></li>
+            <li><input type="checkbox" id="3.5.4"><label for="3.5.4"> 3.5.4. VERIFICAR ELEMENTOS OPERATIVOS A BORDO (CÁMARA, SENSORES ETC.)</label></li>
+        </ul>
+        <li><input type="checkbox" id="3.6"><label for="3.6"> 3.6. FIN DE MISIÓN</label></li>
+        <li><input type="checkbox" id="3.7"><label for="3.7"> 3.7. NUEVA MISIÓN O FIN DE OPERACIÓN</label></li>
+        <li><input type="checkbox" id="3.8"><label for="3.8"> 3.8. DESARME DE DRONE/RPAS</label></li>
+        <ul>
+            <li><input type="checkbox" id="3.8.1"><label for="3.8.1"> 3.8.1. EXTRAER BATERÍAS</label></li>
+            <li><input type="checkbox" id="3.8.2"><label for="3.8.2"> 3.8.2. RETIRAR HÉLICES</label></li>
+            <li><input type="checkbox" id="3.8.3"><label for="3.8.3"> 3.8.3. EXTRAER EQUIPOS AUXILIARES (CÁMARAS, SENSORES, ETC.) SEGÚN CORRESPONDA</label></li>
+            <li><input type="checkbox" id="3.8.4"><label for="3.8.4"> 3.8.4. EXTRAER ANTENAS</label></li>
+            <li><input type="checkbox" id="3.8.5"><label for="3.8.5"> 3.8.5. DESASEGURAR ESTRUCTURA</label></li>
+        </ul>
+        <li><input type="checkbox" id="3.9"><label for="3.9"> 3.9. DESARME ESTACIÓN TERRENA</label></li>
+    </ul>
+</body>
+</html>
