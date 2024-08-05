@@ -694,7 +694,7 @@ section.background_bg_bottom {
 }
 
 .dark_gray.white_fonts h2 {
-	color: #000000 !important;
+	color: #ff5500 !important;
 }
 
 .dark_gray.light_silver_fonts h2 {
@@ -774,7 +774,7 @@ hr.dottad_border {
 	margin: 20px auto 0;
 	width: 80px;
 	height: 5px;
-	background: #000000;
+	background: #ff5500;
 }
 
 .main_heading.text_align_left::after {
@@ -2176,7 +2176,7 @@ section.dottad_star_bg {
 
 .counter i {
 	font-size: 70px;
-	color: #000000;
+	color: #ff5500;
 }
 
 .margin_bottom_30 {
@@ -2270,7 +2270,7 @@ span.skill {
 	padding: 6px 12px;
 	margin-left: 0;
 	line-height: normal;
-	color: #000000;
+	color: #ff5500;
 	background-color: #fff;
 	border: solid #e1e1e1 1px;
 	border-radius: 0;
@@ -2426,8 +2426,8 @@ span.skill {
 
 #accordion .panel.panel-default .panel-heading p a[aria-expanded="true"],
 #accordion .panel.panel-default:nth-child(1) .panel-heading p a {
-	background: #000000;
-	border-color: #000000;
+	background: #ff5500;
+	border-color: #ff5500;
 	color: #fff;
 }
 
@@ -2456,7 +2456,7 @@ span.skill {
 }
 
 #accordion .panel.panel-default .panel-heading p a[aria-expanded="false"] i {
-	color: #000000 !important;
+	color: #ff5500 !important;
 }
 
 #accordion .panel.panel-default .panel-heading p a[aria-expanded="false"] i.fa-angle-down {
@@ -2496,7 +2496,7 @@ span.skill {
 
 #accordion .panel.panel-default .panel-heading p a>i {
 	font-size: 20px;
-	color: #000000;
+	color: #ff5500;
 	margin: 0 10px 0 0;
 }
 
@@ -2565,7 +2565,7 @@ span.skill {
 }
 
 .price_table_active .price_no {
-	color: #000000;
+	color: #ff5500;
 }
 
 .price_table_active {
@@ -2753,7 +2753,7 @@ span.skill {
 .categary li:hover,
 .categary li:focus {
 	padding-left: 30px;
-	background: #000000;
+	background: #ff5500;
 }
 
 .categary li:hover a,
@@ -2773,7 +2773,7 @@ span.skill {
 .tags a:hover,
 .tags a:focus {
 	color: #fff !important;
-	border: solid #000000 1px !important;
+	border: solid #ff5500 1px !important;
 }
 
 .tags li {
@@ -2820,7 +2820,7 @@ span.skill {
 	background: transparent;
 	border: none;
 	font-size: 15px;
-	color: #000000;
+	color: #ff5500;
 	top: 3px;
 	position: relative;
 }
@@ -2853,7 +2853,7 @@ span.skill {
 	padding: 30px 0;
 	float: left;
 	width: 100%;
-	border-top: solid #000000 8px;
+	border-top: solid #ff5500 8px;
 }
 
 .blog_head {
@@ -2873,7 +2873,7 @@ span.skill {
 .blog_feature_cantant li {
 	font-weight: 500;
 	font-size: 14px;
-	color: #000000;
+	color: #ff5500;
 	float: left;
 	margin-right: 15px;
 }
@@ -2884,7 +2884,7 @@ span.skill {
 
 .blog_feature_cantant li a:hover,
 .blog_feature_cantant li a:focus {
-	color: #000000;
+	color: #ff5500;
 }
 
 .blog_feature_cantant p {
@@ -2904,7 +2904,7 @@ span.skill {
 
 .read_more:hover,
 .read_more:focus {
-	color: #000000;
+	color: #ff5500;
 }
 
 .shr {
@@ -3120,7 +3120,7 @@ span.skill {
 .product_list:hover,
 .product_list:focus {
 	box-shadow: 0 0 25px -17px #000;
-	border-bottom: solid #000000 5px;
+	border-bottom: solid #ff5500 5px;
 }
 
 .product_img {
@@ -3740,8 +3740,8 @@ footer ul.social_icons {
 
 .team_blog_colum:hover,
 .team_blog_colum:focus {
-	background: #000000;
-	border-color: #000000;
+	background: #ff5500;
+	border-color: #ff5500;
 }
 
 .team_blog_colum:hover h4,
@@ -3764,8 +3764,8 @@ footer ul.social_icons {
 	font-size: 40px;
 	color: #fff;
 	transition: ease all 0.5s;
-	border: solid #000000 2px;
-	background: #000000;
+	border: solid #ff5500 2px;
+	background: #ff5500;
 }
 
 .service_blog_inner2 {
@@ -3775,9 +3775,9 @@ footer ul.social_icons {
 
 .service_blog_inner2:hover .icon,
 .service_blog_inner2:focus .icon {
-	border: solid #000000 2px;
+	border: solid #ff5500 2px;
 	background: #fff;
-	color: #000000;
+	color: #ff5500;
 }
 
 .topbar-hightlight a {
@@ -4019,7 +4019,7 @@ footer ul.social_icons {
 }
 
 .product_detail .tab_bar_section ul.nav.nav-tabs li a.active {
-	background: #000000;
+	background: #ff5500;
 	color: #fff;
 }
 
@@ -4284,7 +4284,7 @@ footer ul.social_icons {
 	height: 45px;
 	line-height: 45px;
 	margin: 33px 0 0 30px;
-	background: #000000;
+	background: #ff5500;
 	transition: ease all 0.5s;
 	border: none;
 	color: #fff;
@@ -4292,7 +4292,7 @@ footer ul.social_icons {
 }
 
 .shopping-cart .button {
-	background: #000000;
+	background: #ff5500;
 	color: #fff;
 }
 
@@ -4329,7 +4329,7 @@ footer ul.social_icons {
 .tab-info.coupon-section p a:hover,
 .tab-info.login-section p a:focus,
 .tab-info.coupon-section p a:focus {
-	color: #000000;
+	color: #ff5500;
 }
 
 .bt_main {
@@ -4345,7 +4345,7 @@ footer ul.social_icons {
 	border: none;
 	padding: 0 35px;
 	cursor: pointer;
-	background: #000000;
+	background: #ff5500;
 }
 
 .btn-login .bt_main {
@@ -4534,7 +4534,7 @@ footer ul.social_icons {
 }
 
 .adress_cont i {
-	color: #000000;
+	color: #ff5500;
 }
 
 .contant_form p {
